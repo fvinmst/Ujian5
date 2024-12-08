@@ -12,7 +12,6 @@ body {
 }
 
 
-/* Sticky Menu */
 .sticky-menu {
     position: sticky;
     top: 0;
@@ -25,7 +24,6 @@ body {
     justify-content: center;
 }
 
-/* Menu Container */
 .menu-container {
     display: flex;
     align-items: center;
@@ -34,7 +32,6 @@ body {
     justify-content: center;
 }
 
-/* Logo Section */
 .logo-container {
     display: flex;
     align-items: center;
@@ -84,51 +81,8 @@ body {
     font-family: 'Parkinsans', sans-serif;
 }
 
-.hero-search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-}
-
-.hero-search-form .search-box {
-    width: 300px;
-    padding: 12px 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s;
-    background-color: white ;
-}
-
-.hero-search-form .search-box:focus {
-    border-color: #28a745;
-}
-
-.hero-search-form .btn-search {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.hero-search-form .btn-search:hover {
-    background-color: #218838;
-}
-
-
-
-
-
-/* General Styles for Spot Cards */
 .spot-card {
-    position: relative; /* Agar elemen anak dapat diposisikan absolut */
+    position: relative; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +99,6 @@ body {
     text-align: center;
 }
 
-/* Tambahkan efek layer hitam */
 .spot-card::before {
     content: '';
     position: absolute;
@@ -153,35 +106,32 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Warna hitam dengan ketebalan 20% */
-    z-index: 1; /* Pastikan layer ini berada di atas background */
-    border-radius: inherit; /* Ikuti bentuk kotak utama */
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+    border-radius: inherit; 
 }
 
-/* Pastikan teks tetap di atas layer hitam */
 .spot-card span {
     position: relative;
     z-index: 2;
-    font-size: 18px; /* Ukuran teks lebih besar */
-    font-weight: bold; /* Menjaga ketebalan teks */
-    text-transform: uppercase; /* Membuat teks menjadi kapital semua (opsional) */
+    font-size: 18px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
 }
 
-/* Heading dan Deskripsi khusus bagian Top Spots */
 .top-spots h2 {
-    margin-bottom: 5px; /* Jarak bawah heading */
+    margin-bottom: 5px; 
     text-align: center;
 }
 
 .top-spots p {
-    margin-bottom: 40px; /* Jarak bawah paragraf */
+    margin-bottom: 40px; 
     text-align: center;
     color: #555;
     font-size: 16px;
 }
 
 
-/* Specific Background Images */
 .spot-card[data-spot="thailand"] {
     background-image: url('https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ganti dengan URL gambar sebenarnya */
 }
@@ -222,7 +172,6 @@ body {
 
 
 
-/* Iconic Locations Section Styling */
 .iconic-locations {
     text-align: center;
     padding: 50px 20px;
@@ -323,10 +272,9 @@ body {
 }
 
 .location-cards {
-    display: flex; /* Mengatur elemen untuk berjejer ke samping */
-    
-    flex-wrap: wrap; /* Mengatur elemen agar membungkus ke baris baru jika layar tidak cukup lebar */
-    gap: 10px; /* Jarak antar elemen */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 
 .location-card {
@@ -376,12 +324,12 @@ button {
 }
 
 .contact-form {
-    max-width: 600px; /* Atur lebar maksimal form */
-    margin: 0 auto;   /* Gunakan margin otomatis untuk menyelaraskan */
-    padding: 20px;    /* Tambahkan padding jika diperlukan */
-    background-color: #ffffff; /* Tambahkan warna latar jika diinginkan */
-    border-radius: 10px; /* Opsional: untuk sudut melengkung */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: untuk efek bayangan */
+    max-width: 600px; 
+    margin: 0 auto;   
+    padding: 20px;    
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .contact-us h2 {
@@ -452,11 +400,10 @@ button.btn-primary:hover {
     text-decoration: underline;
 }
 
-/* About Us Section */
 .about-us {
     padding: 50px;
     background-color: #D3F1DF;
-    background-image: url('6.png'); /* Ganti dengan path gambar Anda */
+    background-image: url('6.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -465,13 +412,13 @@ button.btn-primary:hover {
 }
 
 .about-us-container {
-    display: flex; /* Flexbox untuk membagi konten menjadi dua kolom */
+    display: flex; 
     gap: 20px;
-    align-items: flex-start; /* Menjaga konten sejajar di bagian atas */
+    align-items: flex-start; 
 }
 
 .about-us-text {
-    flex: 1; /* Memastikan bagian teks mengambil separuh ruang */
+    flex: 1; 
     padding-right: 20px;
 }
 
@@ -489,7 +436,7 @@ button.btn-primary:hover {
 }
 
 .about-us-map {
-    flex: 1; /* Memastikan peta mengambil separuh ruang */
+    flex: 1; 
     text-align: center;
 }
 
