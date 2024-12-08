@@ -1,0 +1,570 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Sticky Menu */
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 45px;
+  
+}
+
+.hero-section {
+    position: relative;
+    background: url('3.jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Chewy', cursive;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Parkinsans', sans-serif;
+}
+
+.hero-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.hero-search-form .search-box {
+    width: 300px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: white ;
+}
+
+.hero-search-form .search-box:focus {
+    border-color: #28a745;
+}
+
+.hero-search-form .btn-search {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-search-form .btn-search:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+/* General Styles for Spot Cards */
+.spot-card {
+    position: relative; /* Agar elemen anak dapat diposisikan absolut */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Tambahkan efek layer hitam */
+.spot-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Warna hitam dengan ketebalan 20% */
+    z-index: 1; /* Pastikan layer ini berada di atas background */
+    border-radius: inherit; /* Ikuti bentuk kotak utama */
+}
+
+/* Pastikan teks tetap di atas layer hitam */
+.spot-card span {
+    position: relative;
+    z-index: 2;
+    font-size: 18px; /* Ukuran teks lebih besar */
+    font-weight: bold; /* Menjaga ketebalan teks */
+    text-transform: uppercase; /* Membuat teks menjadi kapital semua (opsional) */
+}
+
+/* Heading dan Deskripsi khusus bagian Top Spots */
+.top-spots h2 {
+    margin-bottom: 5px; /* Jarak bawah heading */
+    text-align: center;
+}
+
+.top-spots p {
+    margin-bottom: 40px; /* Jarak bawah paragraf */
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* Specific Background Images */
+.spot-card[data-spot="thailand"] {
+    background-image: url('https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ganti dengan URL gambar sebenarnya */
+}
+
+.spot-card[data-spot="new-zealand"] {
+    background-image: url('https://i0.wp.com/cie.co/main/wp-content/uploads/2021/11/new-zealand-scaled.jpg?fit=2560%2C1707&ssl=1');
+}
+
+.spot-card[data-spot="australia"] {
+    background-image: url('https://ik.imagekit.io/tvlk/blog/2024/09/QAj7kSrK-shutterstock_2495680553.jpg?tr=dpr-2,w-675');
+}
+
+.spot-card[data-spot="france"] {
+    background-image: url('https://www.frenchclass.in/wp-content/uploads/2024/01/cities-in-france-paris-laforet.webp');
+}
+
+.spot-card[data-spot="norway"] {
+    background-image: url('https://i.natgeofe.com/k/679e983c-4461-4398-bb6d-9b508fe3e4de/norway-northern-lights.jpg?wp=1&w=1077&h=606');
+}
+
+.spot-card[data-spot="maldives"] {
+    background-image: url('https://www.ahstatic.com/photos/b986_ho_00_p_1024x768.jpg');
+}
+
+.spot-card[data-spot="canada"] {
+    background-image: url('https://ilacinternationalcollege.com/wp-content/uploads/2024/06/Featured-image.jpg');
+}
+
+.spot-card[data-spot="italy"] {
+    background-image: url('https://www.state.gov/wp-content/uploads/2023/07/shutterstock_433413835v2.jpg');
+}
+
+.top-spots, .iconic-locations {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+/* Iconic Locations Section Styling */
+.iconic-locations {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.iconic-locations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.iconic-locations p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.location-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 10px;
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.location-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.location-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.location-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.location-info button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.location-info button:hover {
+    background-color: #218838;
+}
+
+
+.spot-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.spot-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.location-cards {
+    display: flex; /* Mengatur elemen untuk berjejer ke samping */
+    
+    flex-wrap: wrap; /* Mengatur elemen agar membungkus ke baris baru jika layar tidak cukup lebar */
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.location-card {
+    width: 30%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.location-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location-info {
+    padding: 20px;
+}
+
+.location-info h3 {
+    margin-top: 0;
+}
+
+.location-info .price {
+    font-weight: bold;
+    color: #E38E49;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #1F509A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us {
+    padding: 50px;
+    background-color: #D3F1DF;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px; /* Atur lebar maksimal form */
+    margin: 0 auto;   /* Gunakan margin otomatis untuk menyelaraskan */
+    padding: 20px;    /* Tambahkan padding jika diperlukan */
+    background-color: #ffffff; /* Tambahkan warna latar jika diinginkan */
+    border-radius: 10px; /* Opsional: untuk sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: untuk efek bayangan */
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    background-color: #D3F1DF;
+    background-image: url('6.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-container {
+    display: flex; /* Flexbox untuk membagi konten menjadi dua kolom */
+    gap: 20px;
+    align-items: flex-start; /* Menjaga konten sejajar di bagian atas */
+}
+
+.about-us-text {
+    flex: 1; /* Memastikan bagian teks mengambil separuh ruang */
+    padding-right: 20px;
+}
+
+.about-us-text h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-us-map {
+    flex: 1; /* Memastikan peta mengambil separuh ruang */
+    text-align: center;
+}
+
+.about-us-map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.testimonial-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.testimonial-stars {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.user-name {
+    font-size: 1rem;
+    color: #000000;
+}
+
+

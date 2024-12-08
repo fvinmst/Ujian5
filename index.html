@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />    
+</head>
+<body>
+    <nav class="sticky-menu">
+        <div class="menu-container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="5.png" alt="My Travel" class="logo">
+            </div>
+        </div>
+    </nav>
+      
+
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Enjoy Your Vacation With Us</h1>
+                <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit</p>
+                <form class="hero-search-form">
+                    <input type="text" placeholder="Eg: Thailand" class="search-box" />
+                    <button type="submit" class="btn-search">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Partners Section -->
+    <!-- <section class="partners"> 
+        <img src="tripadvisor-logo.png" alt="TripAdvisor">
+        <img src="expedia-logo.png" alt="Expedia">
+        <img src="airbnb-logo.png" alt="Airbnb">
+        <img src="orbitz-logo.png" alt="Orbitz">
+        <img src="booking-logo.png" alt="Booking.com">
+    </section>-->
+
+    <section class="top-spots">
+        <h2>Explore Top Searched Spots</h2>
+        <p>Uncover the top travel destinations that are trending right now.</p>
+        <div class="spot-cards">
+            <!-- Setiap kotak dengan teks negara -->
+            <div class="spot-card" data-spot="thailand">
+                <span>Thailand</span>
+            </div>
+            <div class="spot-card" data-spot="new-zealand">
+                <span>New Zealand</span>
+            </div>
+            <div class="spot-card" data-spot="australia">
+                <span>Australia</span>
+            </div>
+            <div class="spot-card" data-spot="france">
+                <span>France</span>
+            </div>
+            <div class="spot-card" data-spot="norway">
+                <span>Norway</span>
+            </div>
+            <div class="spot-card" data-spot="maldives">
+                <span>Maldives</span>
+            </div>
+            <div class="spot-card" data-spot="canada">
+                <span>Canada</span>
+            </div>
+            <div class="spot-card" data-spot="italy">
+                <span>Italy</span>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Iconic Locations Section -->
+    <div class="iconic-locations">
+        <h2>Our Package</h2>
+        <p>Kami menawarkan berbagai paket perjalanan menarik untuk memenuhi impian liburan Anda.</p>
+        <div class="location-cards">
+            <!-- Contoh Lokasi -->
+            <div class="location-card">
+                <img src="https://st2.depositphotos.com/1927453/6551/i/950/depositphotos_65516303-stock-photo-paris-france-february-9-2015.jpg" alt="Paris, Prancis">
+                <div class="location-info">
+                    <h3>Paris, Prancis</h3>
+                    <div class="details">
+                        <span class="price">$999.00</span>
+                        <span>|</span>
+                        <span>5 Days</span>
+                    </div>
+                    <p>Jelajahi keindahan Kota Paris, termasuk Menara Eiffel, Museum Louvre, dan kafe romantis di sepanjang Sungai Seine.</p>
+                    <button class="button" onclick="window.open('https://wa.me/6281234567890?text=Halo%20saya%20ingin%20membooking%20perjalanan', '_blank')">Book Now</button>
+                </div>
+            </div>
+    
+            <div class="location-card">
+                <img src="https://asset.kompas.com/crops/bWpB4S--EAwT7UT9LvmoaC8MFEk=/42x0:746x469/1200x800/data/photo/2018/10/29/3293844463.jpg" alt="Roma, Italia">
+                <div class="location-info">
+                    <h3>Roma, Italia</h3>
+                    <div class="details">
+                        <span class="price">$899.00</span>
+                        <span>|</span>
+                        <span>4 Days</span>
+                    </div>
+                    <p>Rasakan pesona kota kuno Roma dengan mengunjungi Colosseum, Vatikan, dan air mancur ikonik Trevi.</p>
+                    <button class="btn-primary" onclick="window.open('https://wa.me/6281234567890?text=Halo%20saya%20ingin%20membooking%20perjalanan', '_blank')">Book Now</button>
+                </div>
+            </div>
+    
+            <div class="location-card">
+                <img src="https://784e26ca.rocketcdn.me/wp-content/uploads/2019/05/238-TrI%E2%80%93MAIN.jpg" alt="Swiss Alps, Swiss">
+                <div class="location-info">
+                    <h3>Swiss Alps, Swiss</h3>
+                    <div class="details">
+                        <span class="price">$1,199.00</span>
+                        <span>|</span>
+                        <span>6 Days</span>
+                    </div>
+                    <p>Rasakan liburan penuh petualangan di pegunungan Swiss yang menakjubkan, lengkap dengan pemandangan salju abadi.</p>
+                    <button class="btn-primary" onclick="window.open('https://wa.me/6281234567890?text=Halo%20saya%20ingin%20membooking%20perjalanan', '_blank')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add other location cards similarly -->
+        <section class="about-us">
+        <div class="about-us-container">
+            <!-- Sebelah kiri: Konten teks -->
+            <div class="about-us-text">
+                <h2>About Us</h2>
+                <p>We are passionate travelers who believe that exploring the world enriches our lives. Our mission is to make your journeys unforgettable by offering guidance, tips, and the best travel destinations.</p>
+                <p>From serene beaches to bustling cities, we bring you the most inspiring travel ideas. Let’s make your travel dreams come true!</p>
+            </div>
+    
+            <!-- Sebelah kanan: Peta -->
+            <div class="about-us-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.451636264532!2d112.75186207421792!3d-7.281704694725795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf66a1f7c5b%3A0x8b96b947aeaa70c4!2sJl.%20Kebon%20Jeruk%20No.123%2C%20Jakarta%20Barat%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1690288170728!5m2!1sen!2sid" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- Testimonial Section -->
+    <section class="testimonials">
+        <h2>Apa Kata Mereka Tentang Kami</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/free-photo/asian-backpack-couple-tourist-holding-city-map-crossing-road-travel-people-vacation-lifestyle-concept_1150-13583.jpg?t=st=1732514914~exp=1732518514~hmac=bf684cef741574e23076d19e81f191f152fba599c4c959e5f15459ac7850cd23&w=996" alt="Testimonial 1" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p>Saya merasa aman dan puas dengan pelayanan yang diberikan. Prosesnya mudah, dan saya bisa fokus berlibur tanpa khawatir.</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-user">
+                        <img src="https://lh6.googleusercontent.com/-8f0qJhmodyE/AAAAAAAAAAI/AAAAAAAAAa4/4snhOeQ08RQ/photo.jpg" alt="Agus Purwanto" class="user-avatar">
+                        <span class="user-name">Agus Purwanto</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/premium-photo/group-friends-taking-selfie-urban-street-having-good-fun-together_1078549-1227.jpg?w=996" alt="Testimonial 2" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p>Terima kasih MyTravel! Perjalanan ini menjadi momen yang penuh kenangan indah bagi saya dan keluarga.</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-user">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHXiy0N9ws5dw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1681552566668?e=2147483647&v=beta&t=wT_tHd_k5nuPmYkszCoOMaUjqugaZxO0SAFPy7244CI" alt="Anisa Fitri" class="user-avatar">
+                        <span class="user-name">Anisa Fitri</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://img.freepik.com/free-photo/asian-couple-enjoy-traveling-sitting-coffee-shop_1150-10477.jpg?t=st=1732515086~exp=1732518686~hmac=1c6cebb713ae814688a40082190d16db424880c87ffac279828865c320babecf&w=996" alt="Testimonial 3" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p>Pengalaman wisata bersama MyTravel luar biasa! Pelayanan ramah, fasilitas nyaman, dan semuanya berjalan lancar. Sangat direkomendasikan!</p>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_RaPi72-PXuQcUEkUh6lH7ZDhRCgiEVKt0A&s" alt="Fadilah" class="user-avatar">
+                        <span class="user-name">Fadilah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us for inquiries, collaborations, or any travel-related questions.</p>
+        <div class="contact-form">
+            <form action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
+
